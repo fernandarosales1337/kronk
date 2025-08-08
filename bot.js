@@ -11,7 +11,11 @@ const webs = [
 ];
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: 'new' });
+  // Lanzar Puppeteer en modo compatible con GitHub Actions
+  const browser = await puppeteer.launch({
+    headless: 'new',
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
 
   for (let web of webs) {
     try {
@@ -31,10 +35,5 @@ const webs = [
       );
 
       console.log(`✅ Subida a ImgBB: ${res.data.data.url}`);
-    } catch (error) {
-      console.error(`❌ Error en ${web.url}:`, error.message);
-    }
-  }
+    } catch
 
-  await browser.close();
-})();
