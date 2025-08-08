@@ -6,8 +6,8 @@ const fs = require('fs');
 const IMGBB_API_KEY = '08f302f88262628bfe92d16dc15a2f91';
 
 const webs = [
-  { url: 'https://planett.site/user/Pr%C3%ADncipe%20Azul', nombre: 'planett' },
-  { url: 'http://latinask.com/index.php?qa=user&qa_1=Pr%C3%ADncipe+Azul', nombre: 'latinask' }
+  { url: 'https://planett.site/user/Pr%C3%ADncipe%20Azul/activity', nombre: 'planett' },
+  { url: 'http://latinask.com/index.php?qa=user&qa_1=Pr%C3%ADncipe+Azul/activity', nombre: 'latinask' }
 ];
 
 (async () => {
