@@ -2,7 +2,7 @@ name: Daily Screenshot
 
 on:
   schedule:
-    - cron: "44 20 * * *" # 20:44 UTC = 16:44 hora Venezuela
+    - cron: "0 21 * * *" # 21:00 UTC = 17:00 hora Venezuela
   workflow_dispatch:
 
 jobs:
